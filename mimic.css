@@ -1,0 +1,343 @@
+html {
+    background-color: #F6F6F6;
+}
+
+body {
+    width: 1000px;
+    background-color: white;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 1px 1px 1px #888888;
+    box-shadow: -1px -1px -1px #888888;
+}
+
+nav ul li {
+    position: relative;
+    display: inline;
+    decoration: none;
+    padding-right: 15px;
+}
+
+nav {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    border-bottom: solid;
+    border-color: #E3E3E3;
+    border-width: 2px;
+}
+
+
+
+#graphic_design label:hover {
+    background-color: #507AA5;
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #507AA5;
+    color: white;
+}
+
+#inner_list {
+    display: none;
+}
+
+#inner_list li {
+    position: relative;
+    display: block;
+    top: 0px;
+    right: 30px;
+    padding-top: 10px;
+}
+
+#inner_list li:hover {
+    position: relative;
+    display: block;
+    top: 0px;
+    right: 30px;
+    padding-top: 10px;
+    background-color: #466a90;
+}
+
+#graphic_design:hover #inner_list {
+    z-index: 2;
+    color: white;
+    display: block;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #507AA5;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #507AA5;
+}
+
+/* this works because label and ul are siblings */
+ul ul:hover + label {
+    background-color: #507AA5;
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #507AA5;
+    color: white;
+}
+
+#search {
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #e3e3e3;
+}
+
+button {
+    height: 30px;
+    color: white;
+    background-color: #507AA5;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #507AA5;
+}
+
+#left_list {
+    display: inline-block;
+    z-index: 1;
+    width: 65%;
+    height: 900px;
+    border-right: solid;
+    border-color: #E3E3E3;
+    border-width: 2px;
+
+}
+
+li {
+    list-style-type: none;
+}
+#left_list ul li {
+    position: relative;
+    width: 95%;
+    height: 25%;
+    border-bottom: solid;
+    border-color: #E3E3E3;
+    border-width: 2px;
+    decoration: none;
+
+}
+
+#left_list img {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    height: 125px;
+    width: 125px;
+    padding: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: #E3E3E3;
+}
+
+li div {
+    position: absolute;
+    top: 142px;
+    left: 6px;
+    height: 30px;
+    width: 125px;
+    background-color: #507AA5;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    font-size: 40px;
+    color: #58789A;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #E3E3E3;
+}
+
+.date {
+    position: absolute;
+    padding-top: 10px;
+    left: 150px;
+    decoration: none;
+    top: 120px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #E3E3E3;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.topics {
+    position: absolute;
+    left: 150px;
+    decoration: none;
+    top: 150px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #E3E3E3;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.link {
+    position: absolute;
+    left: 150px;
+    text-decoration: none;
+    top: 190px;
+    color: #7e97b1;
+}
+
+#right_list {
+    position: absolute;
+    top: 175px;
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    z-index: 3;
+}
+
+#right_list img {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 250px;
+    padding-top: 10px;
+    left: 45px;
+    bottom: 10px;
+}
+
+@media only screen and (max-width : 600px) {
+    nav {
+        position: relative;
+        width: 400px;
+        left: 0px;
+        padding-top: 20px;
+        position: relative;
+        border-bottom: solid;
+        border-color: #E3E3E3;
+        border-width: 2px;
+    }
+
+    body {
+        width: 400px;
+        background-color: white;
+        margin: 15px auto;
+        box-shadow: 1px 1px 1px #888888;
+        box-shadow: -1px -1px -1px #888888;
+    }
+
+    nav ul li {
+        position: relative;
+        display: inline;
+        decoration: none;
+        padding-right: 15px;
+        line-height: 40px;
+    }
+
+
+    #right_list {
+        display: none;
+    }
+
+    #left_list {
+        display: inline-block;
+        z-index: 1;
+        width: 400px;
+        height: 900px;
+        border-right: solid;
+        border-color: #E3E3E3;
+        border-width: 2px;
+
+    }
+
+    li {
+        list-style-type: none;
+    }
+    #left_list ul li {
+        position: relative;
+        width: 375px;
+        height: 300px;
+        border-bottom: solid;
+        border-color: #E3E3E3;
+        border-width: 2px;
+        decoration: none;
+
+    }
+
+    #left_list img {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        height: 125px;
+        width: 125px;
+        padding: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #E3E3E3;
+    }
+
+    li div {
+        position: absolute;
+        top: 142px;
+        left: 6px;
+        height: 30px;
+        width: 125px;
+        background-color: #507AA5;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 150px;
+        font-size: 30px;
+        color: #58789A;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #E3E3E3;
+    }
+
+    .date {
+        position: absolute;
+        padding-top: 10px;
+        left: 150px;
+        decoration: none;
+        top: 120px;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #E3E3E3;
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .topics {
+        position: absolute;
+        left: 150px;
+        decoration: none;
+        top: 160px;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #E3E3E3;
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .link {
+        position: absolute;
+        left: 150px;
+        text-decoration: none;
+        top: 200px;
+        color: #7e97b1;
+    }
+}
